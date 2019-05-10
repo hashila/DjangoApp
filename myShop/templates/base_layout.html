@@ -1,0 +1,174 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MY SHOP</title>
+    <link rel="stylesheet" href="{% static 'styles.css'  %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<div class="navbarx">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbarcomp">
+
+      <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'logoimg.png' %}" alt="homw"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}"><p class="navp">Home </p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'details' %}"><p class="navp">Products </p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}"><p class="navp">About Us </p></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+</div>
+
+
+
+    <div class="wrapper">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add font awesome icons -->
+
+
+
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4" id="footerm">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+            <p>We are Sri Lanka’s youngest and fastest growing e-commerce website and we were recently ranked as the 8th best e-commerce brand in Sri Lanka.</p>
+            <p>Myshop.lk is the ideal one-stop online platform to experience a rewarding online shopping experience in Sri Lanka. Being the pioneers in showroom-based online businesses we officially started operations on June 29th 2015.</p>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a href="{% url 'about' %}">ABOUT US</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="{% url 'details' %}">PRODUCTS</a>
+                </p>
+              </li>
+
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+            <!-- Contact details -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i> 5B,Wickramasingehepura</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i> info@myshop.lk</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-phone mr-3"></i> + 94 234 567 88</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-print mr-3"></i> + 94 234 567 89</p>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+            <!-- Social buttons -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+            <div class="col-md-12 mb-4">
+            <!-- Facebook -->
+            <button type="button" class="btn btn-fb btn-lg">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            </button>
+
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+
+      <!-- Copyright -->
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

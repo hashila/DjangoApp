@@ -1,0 +1,59 @@
+body{
+  background-color: white !important;
+
+}
+h1 {
+  font-size: 70px !important;
+}
+
+
+.navbarx{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
+#footerm{
+
+  background-color: black !important;
+  color: white !important;
+
+}
+#navbarcomp{
+  background-color: #fdcb6e !important;
+  font-weight: bold;
+}
+.navp{
+  font-size: 30px !important;
+  font-style: bold !important;
+}
+.wrapper{
+  color: black;
+}
+#carosimgone, #carosimgother{
+  height: 600px;
+  width: 100%;
+}
+#detailsimg{
+  height: 100px !important;
+  width: 70% !important;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+#prodcard{
+  display:inline-block;
+}

@@ -1,0 +1,30 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<h1>Details page</h1>
+<br><br>
+{% for product in products %}
+
+
+<div class="card" style="width: 18rem;"id="prodcard">
+<a href="{% url 'fulldetails' slug=product.slug %}">
+<img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.slug }}" id="detailsimg">
+</a>
+
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <p class="card-text">{{ product.shortd }}</p>
+    <b>Price : Rs.{{ product.prize }}</b>
+    <a href="#" class="btn btn-success">Add to Cart</a>
+  </div>
+</div>
+
+
+
+
+
+{% endfor %}
+
+
+
+{% endblock %}
